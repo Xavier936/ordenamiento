@@ -12,7 +12,7 @@ def eliminar(lista,nro):
 
 numeros =[2,4,1,6,7,9,4]
 print(numeros)
-n = int(input("Ingrese el nro a eliminar"))
+n = int(input("Ingrese el nro a eliminar: "))
 
 eliminar(numeros,n)
 print(numeros)

@@ -50,18 +50,10 @@ def validarCedula(cedula):
         #print(type(d))
     else:
         print("no corresponde")
-    #print(prov)
-    #print(type(prov))
 
 
 
 ci = input("Digite el nro de cédula: ")
-
-
-
-#ced = [int(x) for x in str(ci)]
-
 validarCedula(ci)
 
-#print(type(ced))
 
