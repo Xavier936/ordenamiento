@@ -31,24 +31,28 @@ def validarCedula(cedula):
         imp = imp + d[i]
 
     #se suma las posiciones par
-    for i in range(0, len(d)-1, 2):
+    for i in range(1, len(d)-1, 2):
         par = par + d[i]
 
     #se suma impar + par
-
+    print("par", par)
+    print("impar", imp)
     suma = imp + par
+
 
     #restamos la decena superior
     tmp_1= int(suma)+10
     tmp_1 = str(tmp_1)
 
     d10 = int(tmp_1[0:1] + "0")-suma
+    print("digito 10: ",d10)
 
     #si es diez el digito es 0
     if d10 == 10:
         d10 = 0
     else:
         d10 = d10
+    
     #si el decimo digito calculado es igual al digitado la cedula es correcta
 
     if d10 == d[9]:
@@ -60,4 +64,5 @@ def validarCedula(cedula):
 
 
 
-validarCedula("0202026886")
+cedula = input("Ingrese su cedula: ")
+validarCedula(cedula)
