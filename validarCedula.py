@@ -23,7 +23,7 @@ def validarCedula(cedula):
                 impar =  impar + d[i]    
                 
         
-            #suma de posiciones pares
+            #suma de posiciones pares aquí revisar algoritmo de salto de  posición para que pueda hacer operaciones 
             for i in range(1,len(d)-1, 2):
                 par = par + d[i]
             #print(" el valor es: ",par)
